@@ -169,9 +169,9 @@ textarea.form-control {
 
 /* Site Header */
 .site-header {
-  padding: 3em 30px;
+  padding: 2em 20px;
   position: absolute;
-  top: 0;
+  top: 0%;
   z-index: 100;
   width: 100%;
 }
