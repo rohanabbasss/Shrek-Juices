@@ -6,7 +6,7 @@ body {
   background: #fff;
   font-family: "Open Sans", cursive;
   font-size: 16px;
-  line-height: 1.8;
+  /* line-height: 1.8; */
   font-weight: 300;
   color: #999999;
 }
