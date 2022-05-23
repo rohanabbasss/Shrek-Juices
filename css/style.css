@@ -1,6 +1,10 @@
 html {
   overflow-x: hidden;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background: #fff;
@@ -361,7 +365,7 @@ textarea.form-control {
 .site-tab-nav li a {
   background: none;
   color: #b3b3b3;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .2em;
   border-bottom: 2px solid transparent;

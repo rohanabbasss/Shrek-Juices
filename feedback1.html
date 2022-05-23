@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Shrek Juices</title>
+    <title>Shrek Juice | Feedback</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/x-icon" href="img/finallogoo.png">
@@ -27,12 +27,13 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js\form,js"></script>
 
 
 </head>
 
 <style>
-    .container {
+    .container19 {
         height: auto;
         width: 80%;
         padding: 20px;
@@ -66,40 +67,186 @@
         background-color: rgb(255, 166, 0);
     }
 </style>
-<script>
-    function validateForm() {
-        let x = document.forms["myForm"]["fname"].value;
-        if (x == "") {
-            alert("Name must be filled out");
-            return false;
-        }
-    }
-</script>
+
 
 <body>
-    <div class="container">
-        <form action="feedback" name="myForm" onsubmit="return validateForm()" method="post">
-            <h1>Feedback Form</h1><br>
+    <div class="site-wrap">
+
+        <nav class="site-menu">
+          <div class="site-menu-inner">
+            <ul class="list-unstyled">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Products and Menu</a></li>
+              <li><a href="StoreLocation.html">Store Location</a></li>
+              <li><a href="franchising.html">Franchising</a></li>
+              <li><a href="Catering.html">Catering</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="feedback1.html">Feedback</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+        </nav>
+    
+        <header class="site-header">
+          <div class="row align-items-center" style="height: 90px;">
+            <div class="col-5 col-md-3">
+              <ul class="list-unstyled social">
+    
+                <a href="index.html"><img style="width: 80px; height: auto;" src="img/finallogoo.png" alt=""></a>
+    
+              </ul>
+            </div>
+            <div class="col-2 col-md-6 text-center">
+    
+              <ul class="list-unstyled social">
+    
+                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+            <div class="col-5 col-md-3 text-right menu-burger-wrap">
+    
+              <a href="#" class="site-nav-toggle js-site-nav-toggle"><i></i></a>
+    
+            </div>
+          </div>
+    
+        </header>
+    
+        <div class="main-wrap">
+          <div class="cover_1">
+            <div class="img_bg" style=" width: 100%; height:auto; background-image: url(img/bg77.jpg);"
+              data-stellar-background-ratio="0.5">
+              <div class="container">
+                <div class="row align-items-center">
+                  <!-- <div class="col-md-10" data-aos="fade-up">
+                    <h2 style=" text-align: center;  font-size: 2vw; color: white; width: auto; height: auto;">"JUST THE
+                      RIGHT AMOUNT OF RAW"</h2>
+                    <p style=" text-align: center;  font-size: 1vw; color: white; width: auto; height: auto;">Delight your
+                      taste buds like never before, Right place to find natural ingredients.</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div><br><hr><br>
+
+    <div class="container19">
+        <form action="feedback" name="myForm" onsubmit="validate()">
+            <h1 style="text-align: center;">Feedback Form</h1><br>
             <hr>
             <p>Here at Local it is our duty to serve you, the customer, and we take your feedback very seriously.
                 Whether negative or positive, please let us know about your experience</p>
-            <label for="text">Username</label>
-            <input type="text" name="fname" id="" placeholder="Type name here">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Type name here" required>
             <label for="email">Email</label>
-            <input type="email" name="email" id="" placeholder="Type email here">
+            <input type="email" name="email" id="email" placeholder="Type email here" required>
             <label for="phone">Phone no</label>
-            <input type="tel" name="phone" id="" placeholder="Type phone no here"><br><br>
+            <input type="tel" name="tel" id="tel" placeholder="Type phone no here" required><br><br>
             <h4>Please provide your feedback on the quality of our service</h4>
-            <input type="radio" id="html" name="fav_language" value="HTML">
-             <label for="html">Exellent</label>
-             <input type="radio" id="css" name="fav_language" value="CSS">
-             <label for="css">Good</label>
-             <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">Poor</label><br>
-            <input type="button" value="Submit">
+            <input type="radio" name="rating" value="Exellent">Exellent
+            <input type="radio" name="rating" value="Very Good">Very Good
+            <input type="radio" name="rating" value="Good">Good
+            <input type="radio" name="rating" value="Fair">Fair
+            <input type="radio" name="rating" value="Poor">Poor<br>
+            <button type="submit">Submit</button>
 
         </form>
+    </div><br>
+    <footer>
+        <div class="site-footer">
+          <div class="container">
+            <div class="row small-gutters mb-5">
+              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="100">
+                <div class="footer-widget">
+                  <h3>Shrek Juice</h3>
+                  <p>The refreshment you never felt anywhere!</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="200">
+                <div class="footer-widget">
+                  <h3>Service</h3>
+                  <p>Booking from 12:00pm - 1:30pm</p>
+                  <h3>Catering</h3>
+                  <p>Everyday: <br> Booking from 6:00pm - 9:00pm</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="300">
+                <div class="footer-widget">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li><a href="#">Help &amp; Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Get in Touch</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="400">
+                <div class="footer-widget footer-contact-widget">
+  
+                  <h3>Subscribe</h3>
+                  <p>For recent update and news</p>
+                  <form action="" class="form-subscribe mb-5">
+                    <div class="form-group form-field">
+                      <input type="submit" value="Send" class="btn btn-primary">
+                      <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                  </form>
+  
+                  <h3>Contact Us</h3>
+                  <p class="contact-email">info@shrekjuice.com</p>
+                  <p class="contact-phone">1-444-123-9829</p>
+  
+  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </footer>
+  
+      <div class="site-footer-copyright">
+        <div class="container">
+          <div class="row">
+  
+            <p class="footer-text col-md-12">
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made by
+              Rohan & Ali
+            </p>
+          </div>
+        </div>
+      </div>
+  
     </div>
-</body>
-
+  
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+          stroke="#f4b214" />
+      </svg></div>
+  
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+  
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+  
+    <script src="js/aos.js"></script>
+  
+  
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  
+    <script src="js/main.js"></script>
+  </body>
+  
 </html>

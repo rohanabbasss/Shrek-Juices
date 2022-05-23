@@ -1,0 +1,26 @@
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const tel = document.getElementById('tel');
+const form = document.getElementById('myForm');
+
+form.addEventListener('submit',(e) =>  {
+         e.preventDefault();
+})
+function validate(){
+    var valid = false;
+    var x = document.myForm.rating;
+    for(var i=0; i < x.length ; i++){
+        if(x[i].checked){
+            valid = true;
+            break;
+        }
+    }
+    if(valid){
+        alert("Feedback has been submitted successfully!");
+    }
+    else{
+        alert("Please rate our service by selecting radio ");
+        return false;
+    }
+
+}
