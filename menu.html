@@ -30,7 +30,26 @@
 
 
 </head>
+<style>
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(127, 102, 56);
+  }
+
+  ::-webkit-scrollbar-thumb {
+
+    background-color: rgb(255, 166, 0);
+  }
+</style>
 <body>
 
 
@@ -101,27 +120,39 @@
 
               <ul class="nav site-tab-nav" id="pills-tab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="pills-fruitjuice-tab" data-toggle="pill" href="#pills-fruitjuice"
-                    role="tab" aria-controls="pills-fruitjuice" aria-selected="true">Fruit Juices</a>
+                  <a class="nav-link active" id="pills-breakfast-tab" data-toggle="pill" href="#pills-breakfast"
+                    role="tab" aria-controls="pills-breakfast" aria-selected="true">Fruit Juices</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-vegetable-tab" data-toggle="pill" href="#pills-vegetable" role="tab"
-                    aria-controls="pills-vegetable" aria-selected="false">Vegetable Juices</a>
+                  <a class="nav-link" id="pills-lunch-tab" data-toggle="pill" href="#pills-lunch" role="tab"
+                    aria-controls="pills-lunch" aria-selected="false">Vegetable Juices</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-smoothie-tab" data-toggle="pill" href="#pills-smoothie" role="tab"
-                    aria-controls="pills-smoothie" aria-selected="false">Smoothies</a>
-                </li>
-              
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-protein-tab" data-toggle="pill" href="#pills-protein" role="tab"
-                    aria-controls="pills-protein" aria-selected="false">Protein Shakes</a>
+                  <a class="nav-link" id="pills-dinner-tab" data-toggle="pill" href="#pills-dinner" role="tab"
+                    aria-controls="pills-dinner" aria-selected="false">Smoothies</a>
                 </li>
 
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-proteinshakes-tab" data-toggle="pill" href="#pills-proteinshakes"
+                    role="tab" aria-controls="pills-proteinshakes" aria-selected="false">Protein Shakes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-winter-tab" data-toggle="pill" href="#pills-winter" role="tab"
+                    aria-controls="pills-winter" aria-selected="false">Winter Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-chocolate-tab" data-toggle="pill" href="#pills-chocolate" role="tab"
+                    aria-controls="pills-chocolate" aria-selected="false">Chocolate Juices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-mocktails-tab" data-toggle="pill" href="#pills-mocktails" role="tab"
+                    aria-controls="pills-mocktails" aria-selected="false">Mock Tails</a>
+                </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-fruitjuice" role="tabpanel"
-                  aria-labelledby="pills-fruitjuice-tab">
+
+                <div class="tab-pane fade show active" id="pills-breakfast" role="tabpanel"
+                  aria-labelledby="pills-breakfast-tab">
                   <div class="d-block d-md-flex menu-food-item">
                     <div class="text order-1 mb-3">
                       <h3><a href="#">Orange Juice</a></h3>
@@ -164,10 +195,11 @@
                       <strong>Rs-270</strong>
                     </div>
                   </div> <!-- .menu-fruitjuice-item -->
+
+
                 </div>
 
-
-                <div class="tab-pane fade" id="pills-vegetable" role="tabpanel" aria-labelledby="pills-vegetable-tab">
+                <div class="tab-pane fade" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab">
 
                   <div class="d-block d-md-flex menu-food-item">
                     <div class="text order-1 mb-3">
@@ -215,14 +247,13 @@
                   </div> <!-- .menu-vegetablejuice-item -->
 
                 </div>
-                <div class="tab-pane fade" id="pills-smoothie" role="tabpanel" aria-labelledby="pills-smoothie-tab">
+
+                <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab">
 
                   <div class="d-block d-md-flex menu-food-item">
                     <div class="text order-1 mb-3">
-                      <h3><a href="#">Mango Smoothie</a></h3>
-                      <p>100% Natural, Whole Fruit Smoothie - Blend of Alphonso Mango and Kerala Pineapple, it's an ode
-                        to the king of fruits. Rich in Iron and Potassium, it's also a great source of Vitamin A and
-                        Vitamin C.</p>
+                      <h3><a href="#">Strawberry</a></h3>
+                      <p>Strawberries blended with milk, yogurt, sugar, vanilla and ice.</p>
                     </div>
                     <div class="price order-2">
                       <strong>Rs-320</strong>
@@ -231,9 +262,8 @@
 
                   <div class="d-block d-md-flex menu-food-item">
                     <div class="text order-1 mb-3">
-                      <h3><a href="#">Berries Smoothie</a></h3>
-                      <p>100% Natural, Whole Fruit Smoothie - Blend of bold, sweet, and intense flavours of Strawberry
-                        and raspberry. No sugar, preservatives, dairy, and colours. Vegan-Friendly and Gluten-Free.</p>
+                      <h3><a href="#">Banana</a></h3>
+                      <p> Banana smoothie has extra fiber and protein from the flax and greek yogurt.</p>
                     </div>
                     <div class="price order-2">
                       <strong>Rs-300</strong>
@@ -242,300 +272,413 @@
 
                   <div class="d-block d-md-flex menu-food-item">
                     <div class="text order-1 mb-3">
-                      <h3><a href="#">Jamun & Black Salt Smoothie</a></h3>
-                      <p>100% Natural, Whole Fruit Smoothie- Blend of Jamun and Black Salt, and a touch of nostalgia.
-                        Take a sip and transport yourself back to the jamun orchards, home to scavenger hunts, picking
-                        up as many jamuns as your pockets would allow.</p>
+                      <h3><a href="#">Blueberry</a></h3>
+                      <p>A heaping mountain of rings, handmade with Panko breading and shredded coconut flakes.</p>
                     </div>
                     <div class="price order-2">
                       <strong>Rs-360</strong>
                     </div>
-                  </div>
+                  </div> <!-- .menu-smoothies-item -->
 
                   <div class="d-block d-md-flex menu-food-item">
                     <div class="text order-1 mb-3">
-                      <h3><a href="#">Chilli Guava</a></h3>
-                      <p>100% Natural, Whole Fruit Smoothie - a nostalgic blend of Paprika, Pink Salt, Pink Guava,
-                        Sugarcane Juice, Lemon. The distinctive flavour of guava with a kick of chilli and dash of
-                        salt for that characteristic touch of sweet and savoury can take you down memory lane in no
-                        time.</p>
+                      <h3><a href="#">Vanilla</a></h3>
+                      <p>This creamy, thick and luscious Vanilla Smoothie is an awesome way to start the day!</p>
                     </div>
                     <div class="price order-2">
-                      <strong>Rs-360</strong>
+                      <strong>Rs-320</strong>
                     </div>
+                  </div> <!-- .menu-smoothies-item -->
 
+                </div>
 
-                    <div class="tab-pane fade" id="pills-protein" role="tabpanel" aria-labelledby="pills-protein-tab">
-
-                      <div class="d-block d-md-flex menu-food-item">
-                        <div class="text order-1 mb-3">
-                          <h3><a href="#">Carrot ce</a></h3>
-                          <p>Carrot juice contains more beta-carotene than raw carrots do.</p>
-                        </div>
-                        <div class="price order-2">
-                          <strong>Rs-220</strong>
-                        </div>
-                      </div> <!-- .menu-vegetablejuice-item -->
-    
-                      <div class="d-block d-md-flex menu-food-item">
-                        <div class="text order-1 mb-3">
-                          <h3><a href="#">Tomato Juice</a></h3>
-                          <p>Tomato juice is rich in nutrients like vitamin C, B vitamins, and potassium. It's also an
-                            excellent source of antioxidants, such as lycopene, which may reduce inflammation and your risk
-                            of heart disease and some cancers.</p>
-                        </div>
-                        <div class="price order-2">
-                          <strong>Rs-230</strong>
-                        </div>
-                      </div> <!-- .menu-vegetablejuice-item -->
-    
-                      <div class="d-block d-md-flex menu-food-item">
-                        <div class="text order-1 mb-3">
-                          <h3><a href="#">Spinach Juice</a></h3>
-                          <p>Spinach tastes good and is loaded with essential vitamins and minerals such as carotenes, amino
-                            acids, iron, iodine, potassium and magnesium.</p>
-                        </div>
-                        <div class="price order-2">
-                          <strong>Rs-240</strong>
-                        </div>
-                      </div> <!-- .menu-vegetablejuice-item -->
-    
-                      <div class="d-block d-md-flex menu-food-item">
-                        <div class="text order-1 mb-3">
-                          <h3><a href="#">Cabbage Juice</a></h3>
-                          <p>Cabbage juice is loaded with nutrients, such as vitamins C and K, and drinking it is linked to
-                            many purported benefits, including weight loss, improved gut health, decreased inflammation,
-                            balanced hormones, and body detoxification.</p>
-                        </div>
-                        <div class="price order-2">
-                          <strong>Rs-260</strong>
-                        </div>
-                      </div>
-
-
+                <div class="tab-pane fade" id="pills-proteinshakes" role="tabpanel"
+                  aria-labelledby="pills-proteinshakes-tab">
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Banana Protein Shake</a></h3>
+                      <p>Greek yogurt, vanilla protein powder, almond milk</p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-320</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Vanilla Coffee Shake</a></h3>
+                      <p>Wake up and energize with vanilla and coffee! With just 3 ingredients, this shake practically
+                        makes itself.</p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-320</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Chocolate Coffee Shake</a></h3>
+                      <p>Rich coffee and delicious chocolate unite for a mocha-inspired shake. </p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-320</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Oatmeal Shake</a></h3>
+                      <p>Oatmeal: it's not just for bowls. The added fiber and flavor make it the perfect
+                        breakfast-on-the-go!</p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-320</strong>
+                    </div>
                   </div>
                 </div>
 
-                
-
-
-              </div>
-            </div>
-          </div>
-        </div> <!-- .section -->
-        <div class="section">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-7 text-center" data-aos="fade-up">
-                <h2 class="mb-4">Our Specialties</h2>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum voluptatem odio
-                  expedita laborum fugit repudiandae dolorem consectetur.</p>
-              </div>
-            </div>
-          </div>
-        </div><!-- .section -->
-
-        <div class="section pt-0 pb-0">
-
-          <div class="menus d-flex bg-light">
-            <div class="d-flex item">
-              <div class="image" style="background-image: url(img/special1.jpg);" data-aos="fade"></div>
-              <div class="text">
-                <h3>Minted Mango</h3>
-                <p>Small chunks of mango are concealed under a thick canopy of creamy vanilla ice cream, bringing with
-                  them that tang of sweet and sour to cut the milkiness of the cream. A slight aroma and aftertaste of
-                  mint add to how incredibly refreshing this drink is.</p>
-                <p class="price">Rs.350</p>
-              </div>
-            </div> <!-- .item -->
-
-            <div class="d-flex item">
-              <div class="image order-2 order-md-1" style="background-image: url(img/special2.jpg);" data-aos="fade"
-                data-aos-delay="100"></div>
-              <div class="text order-1 order-md-2">
-                <h3>Jam Jar Cooler</h3>
-                <p>Cucumber and broccoli extract, a fresh puree of parsely and some apple juice come together in a
-                  surprisingly harmonious way to make for one of the most divine preparations. This juice might not be
-                  the
-                  most attractive one on the menu, but the flavours it gives abode to are sufficient to make it far more
-                  than good enough.</p>
-                <p class="price">Rs.299</p>
-              </div>
-            </div> <!-- .item -->
-
-            <div class="d-flex item">
-              <div class="image order-1 order-md-2 order-lg-2 order-xl-1"
-                style="background-image: url(img/special3.jpg);" data-aos="fade" data-aos-delay="200"></div>
-              <div class="text order-2 order-md-1 order-lg-1 order-xl-2">
-                <h3>Gym Junkie</h3>
-                <p>Toasted muesli in low-fat soya milk blended beautifully with low-fat vanilla yoghurt to combine the
-                  best of taste and health, the aptly named Gym Junkie comes served with a drizzle of honey and fresh
-                  banana cubes. This one’s definitely for our health-conscious readers. You know who you are.</p>
-                <p class="price">Rs.370</p>
-
-              </div>
-            </div> <!-- .item -->
-
-            <div class="d-flex item">
-              <div class="image order-2" style="background-image: url(img/special4.jpg);" data-aos="fade"
-                data-aos-delay="300"></div>
-              <div class="text order-1 mb-3">
-                <h3>All Berry Bang</h3>
-                <p>Standing true to its name, this drink contains all the berries you would want to have a close
-                  association with. As you sip on a gorgeous mix of apple juice and strawberry yoghurt, you’ll find
-                  little
-                  chunks of raspberry, blueberry and strawberry thrown in for good measure and the blast of flavours in
-                  your mouth is something you’re unlikely to forget, each with their own distinct flavours.</p>
-                <p class="price">Rs.399</p>
-              </div>
-            </div> <!-- .item -->
-
-            <div class="d-flex item">
-              <div class="image order-1 order-lg-1 order-xl-2" style="background-image: url(img/special5.jpg);"
-                data-aos="fade" data-aos-delay="400"></div>
-              <div class="text order-2 order-lg-2 order-xl-1">
-                <h3>Custard Apple Cream </h3>
-                <p>This is not a common fruit that we usually encounter, being largely seasonal, but the custard apple
-                  cream is a rich indulgence that will have you coming back for more.</p>
-                <p class="price">Rs.499</p>
-              </div>
-            </div> <!-- .item -->
-
-            <div class="d-flex item">
-              <div class="image order-2 order-md-1 order-lg-1 order-xl-2"
-                style="background-image: url(img/special7.jpg);" data-aos="fade" data-aos-delay="500"></div>
-              <div class="text order-1 order-md-2 order-lg-2 order-xl-1">
-                <h3>BlueNut Smoothie</h3>
-                <p>A rich mix of light, chilled milk and some creamy yoghurt is what constitutes most of this drink,
-                  replete with tiny wedges of blueberry and crushed walnut with honey. The medley of fruity and nutty
-                  flavours boosts the mild sweetness of this chilled fusion to make for a true summer treat.</p>
-                <p class="price">Rs.300</p>
-              </div>
-            </div> <!-- .item -->
-
-          </div>
-        </div>
-
-
-      </div>
-      <!-- .section -->
-
-      <div class="section" data-aos="fade">
-        <div class="container">
-          <div class="row justify-content-center " data-aos="fade-up">
-            <div class="col-md-8">
-              <div class="owl-carousel home-slider-loop-false">
-
-                <div class="item">
-                  <blockquote class="testimonial">
-                    <div class="author">
-                      <img src="img/pr1.jpg" alt="Image placeholder" class="mb-3">
-                      <h4>Muhammad Ali</h4>
-                      <p>CEO, Founder</p>
+                <div class="tab-pane fade" id="pills-winter" role="tabpanel" aria-labelledby="pills-winter-tab">
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#"> COCOA COCONUT MINT SMOOTHIE</a></h3>
+                      <p>It reminds of those warm mint hot chocolate drinks. It’s especially nice to have as a light
+                        breakfast or dessert after a hot meal.</p>
                     </div>
-
-                  </blockquote>
+                    <div class="price order-2">
+                      <strong>Rs-299</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">SKINNY MINI PUMPKIN PIE SMOOTHIE</a></h3>
+                      <p>pumpkin is such a superfood, it’s perfectly fine to enjoy it all year. It’s low in sugar, high
+                        in potassium and fiber, and filled with beta carotene to nourish your skin, eyes and hair in the
+                        winter months.</p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-240</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">CRANBERRY ORANGE PROTEIN SMOOTHIE</a></h3>
+                      <p>Featuring some of winter’s finest produce, this cranberry orange smoothie has a wonderful tangy
+                        flavor you’ll love. It’s also high in Vitamin C, fiber, and antioxidants to protect your
+                        immunity. </p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-340</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">COCONUT CREAMSICLE SMOOTHIE</a></h3>
+                      <p> This creamsicle smoothie is a delightful way for me to indulge in a favorite childhood-like
+                        treat, and the superfood coconut at the same time.</p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-320</strong>
+                    </div>
+                  </div>
                 </div>
+
+                <div class="tab-pane fade" id="pills-chocolate" role="tabpanel" aria-labelledby="pills-chocolate-tab">
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Milk Chocolate Strawberry</a></h3>
+                      <p>Chocolate covered strawberry recipes are often high in calories, and fat. But this low calorie
+                        strawberries and chocolate recipe is healthy enough for any diet. </p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-259</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Dark Chocolate Banana</a></h3>
+                      <p>Dark chocolate, known for its bitter bite, helps neutralize very sweet fruits such as bananas.
+                      </p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-270</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Milk Chocolate Banana</a></h3>
+                      <p>Bananas and milk are both rich in a number of important nutrients. They can also be combined
+                        and enjoyed as a healthy, post-workout snack </p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-340</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Dark Chocolate Strawberry</a></h3>
+                      <p> Dark chocolate is the most bitter of the bunch, which means it matches well to fruit that is
+                        extra sweet. Great examples are banana, mango, figs, pears, and, of course, strawberries.</p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-320</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-mocktails" role="tabpanel" aria-labelledby="pills-mocktails-tab">
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Rum Punch</a></h3>
+                      <p>Instead of pouring single drinks for a crowd, set up a bowl of GZ's punch. The addition of
+                        watermelon puree (marinated in Grand Marnier) will wow family and friends. </p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-250</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Shark-arita</a></h3>
+                      <p>This adults-only frozen treat is a perfect mix of sweet and sour with tequila, lime juice and grenadine.
+                      </p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-260</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Frozen Pineapple Treat</a></h3>
+                      <p>You can substitute four cups of frozen pineapple chunks instead of using a whole pineapple for this sweet frozen treat. </p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-340</strong>
+                    </div>
+                  </div> <!-- .menu-proteinshakes-item -->
+                  <div class="d-block d-md-flex menu-food-item">
+                    <div class="text order-1 mb-3">
+                      <h3><a href="#">Classic Gin Gimlet</a></h3>
+                      <p> It's all about the bright pop of lime juice in this impressive cocktail.</p>
+                    </div>
+                    <div class="price order-2">
+                      <strong>Rs-320</strong>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
               </div>
             </div>
           </div>
         </div>
       </div> <!-- .section -->
-      <!-- .main-wrap -->
-      <footer>
-        <div class="site-footer">
-          <div class="container">
-            <div class="row small-gutters mb-5">
-              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="100">
-                <div class="footer-widget">
-                  <h3>Shrek Juice</h3>
-                  <p>The refreshment you never felt anywhere!</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="200">
-                <div class="footer-widget">
-                  <h3>Service</h3>
-                  <p>Booking from 12:00pm - 1:30pm</p>
-                  <h3>Catering</h3>
-                  <p>Everyday: <br> Booking from 6:00pm - 9:00pm</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="300">
-                <div class="footer-widget">
-                  <h3>Quick Links</h3>
-                  <ul>
-                    <li><a href="#">Help &amp; Support</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Get in Touch</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="400">
-                <div class="footer-widget footer-contact-widget">
-
-                  <h3>Subscribe</h3>
-                  <p>For recent update and news</p>
-                  <form action="" class="form-subscribe mb-5">
-                    <div class="form-group form-field">
-                      <input type="submit" value="Send" class="btn btn-primary">
-                      <input type="text" class="form-control" placeholder="Email">
-                    </div>
-                  </form>
-
-                  <h3>Contact Us</h3>
-                  <p class="contact-email">info@shrekjuice.com</p>
-                  <p class="contact-phone">1-444-123-9829</p>
-
-
-                </div>
-              </div>
+      <div class="section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7 text-center" data-aos="fade-up">
+              <h2 class="mb-4">Our Specialties</h2>
+              <p class="lead">Products made by unique recipes by the best bartenders.</p>
             </div>
           </div>
-
         </div>
-      </footer>
+      </div> <!-- .section -->
 
-      <div class="site-footer-copyright">
-        <div class="container">
-          <div class="row">
+      <div class="section pt-0 pb-0">
 
-            <p class="footer-text col-md-12">
-              Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made by
-              Rohan & Ali
-            </p>
-          </div>
+        <div class="menus d-flex bg-light">
+          <div class="d-flex item">
+            <div class="image" style="background-image: url(img/special1.jpg);" data-aos="fade"></div>
+            <div class="text">
+              <h3>Minted Mango</h3>
+              <p>Small chunks of mango are concealed under a thick canopy of creamy vanilla ice cream, bringing with
+                them that tang of sweet and sour to cut the milkiness of the cream. A slight aroma and aftertaste of
+                mint add to how incredibly refreshing this drink is.</p>
+              <p class="price">Rs.350</p>
+            </div>
+          </div> <!-- .item -->
+
+          <div class="d-flex item">
+            <div class="image order-2 order-md-1" style="background-image: url(img/special2.jpg);" data-aos="fade"
+              data-aos-delay="100"></div>
+            <div class="text order-1 order-md-2">
+              <h3>Jam Jar Cooler</h3>
+              <p>Cucumber and broccoli extract, a fresh puree of parsely and some apple juice come together in a
+                surprisingly harmonious way to make for one of the most divine preparations. This juice might not be the
+                most attractive one on the menu, but the flavours it gives abode to are sufficient to make it far more
+                than good enough.</p>
+              <p class="price">Rs.299</p>
+            </div>
+          </div> <!-- .item -->
+
+          <div class="d-flex item">
+            <div class="image order-1 order-md-2 order-lg-2 order-xl-1" style="background-image: url(img/special3.jpg);"
+              data-aos="fade" data-aos-delay="200"></div>
+            <div class="text order-2 order-md-1 order-lg-1 order-xl-2">
+              <h3>Gym Junkie</h3>
+              <p>Toasted muesli in low-fat soya milk blended beautifully with low-fat vanilla yoghurt to combine the
+                best of taste and health, the aptly named Gym Junkie comes served with a drizzle of honey and fresh
+                banana cubes. This one’s definitely for our health-conscious readers. You know who you are.</p>
+              <p class="price">Rs.370</p>
+
+            </div>
+          </div> <!-- .item -->
+
+          <div class="d-flex item">
+            <div class="image order-2" style="background-image: url(img/special4.jpg);" data-aos="fade"
+              data-aos-delay="300"></div>
+            <div class="text order-1 mb-3">
+              <h3>All Berry Bang</h3>
+              <p>Standing true to its name, this drink contains all the berries you would want to have a close
+                association with. As you sip on a gorgeous mix of apple juice and strawberry yoghurt, you’ll find little
+                chunks of raspberry, blueberry and strawberry thrown in for good measure and the blast of flavours in
+                your mouth is something you’re unlikely to forget, each with their own distinct flavours.</p>
+              <p class="price">Rs.399</p>
+            </div>
+          </div> <!-- .item -->
+
+          <div class="d-flex item">
+            <div class="image order-1 order-lg-1 order-xl-2" style="background-image: url(img/special5.jpg);"
+              data-aos="fade" data-aos-delay="400"></div>
+            <div class="text order-2 order-lg-2 order-xl-1">
+              <h3>Custard Apple Cream </h3>
+              <p>This is not a common fruit that we usually encounter, being largely seasonal, but the custard apple cream is a rich indulgence that will have you coming back for more.</p>
+              <p class="price">Rs.499</p>
+            </div>
+          </div> <!-- .item -->
+
+          <div class="d-flex item">
+            <div class="image order-2 order-md-1 order-lg-1 order-xl-2" style="background-image: url(img/special7.jpg);"
+              data-aos="fade" data-aos-delay="500"></div>
+            <div class="text order-1 order-md-2 order-lg-2 order-xl-1">
+              <h3>BlueNut Smoothie</h3>
+              <p>A rich mix of light, chilled milk and some creamy yoghurt is what constitutes most of this drink,
+                replete with tiny wedges of blueberry and crushed walnut with honey. The medley of fruity and nutty
+                flavours boosts the mild sweetness of this chilled fusion to make for a true summer treat.</p>
+              <p class="price">Rs.300</p>
+            </div>
+          </div> <!-- .item -->
+
         </div>
       </div>
 
     </div>
+    <!-- .section -->
 
-    <!-- loader -->
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-          stroke="#f4b214" />
-      </svg></div>
+    <div class="section" data-aos="fade">
+      <div class="container">
+        <div class="row justify-content-center " data-aos="fade-up">
+          <div class="col-md-8">
+            <div class="owl-carousel home-slider-loop-false">
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
+              <div class="item">
+                <blockquote class="testimonial">
+                  <div class="author">
+                    <img src="img/pr1.jpg" alt="Image placeholder" class="mb-3">
+                    <h4>Muhammad Ali</h4>
+                    <p>CEO, Founder</p>
+                  </div>
 
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.timepicker.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .section -->
+    <!-- .main-wrap -->
+    <footer>
+      <div class="site-footer">
+        <div class="container">
+          <div class="row small-gutters mb-5">
+            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="100">
+              <div class="footer-widget">
+                <h3>Shrek Juice</h3>
+                <p>The refreshment you never felt anywhere!</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="200">
+              <div class="footer-widget">
+                <h3>Service</h3>
+                <p>Booking from 12:00pm - 1:30pm</p>
+                <h3>Catering</h3>
+                <p>Everyday: <br> Booking from 6:00pm - 9:00pm</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="300">
+              <div class="footer-widget">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="#">Help &amp; Support</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Get in Touch</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="400">
+              <div class="footer-widget footer-contact-widget">
 
-    <script src="js/aos.js"></script>
+                <h3>Subscribe</h3>
+                <p>For recent update and news</p>
+                <form action="" class="form-subscribe mb-5">
+                  <div class="form-group form-field">
+                    <input type="submit" value="Send" class="btn btn-primary">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                </form>
+
+                <h3>Contact Us</h3>
+                <p class="contact-email">info@shrekjuice.com</p>
+                <p class="contact-phone">1-444-123-9829</p>
 
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <script src="js/main.js"></script>
+      </div>
+    </footer>
+
+    <div class="site-footer-copyright">
+      <div class="container">
+        <div class="row">
+
+          <p class="footer-text col-md-12">
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made by
+            Rohan & Ali
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#f4b214" />
+    </svg></div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+
+  <script src="js/aos.js"></script>
+
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

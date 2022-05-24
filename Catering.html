@@ -26,6 +26,26 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <style>
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+    ::-webkit-scrollbar-track {
+      border-radius: 5px;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgb(127, 102, 56);
+    }
+  
+    ::-webkit-scrollbar-thumb {
+  
+      background-color: rgb(255, 166, 0);
+    }
+  </style>
   <body>
     
 
@@ -97,6 +117,10 @@
                   At Shrek Juice, we believe in the power of organic food with a healthy, plant-based, menu that is great-tasting and great for you. Healthy in body & strong in spirit, that is our goal. While some might think this is a trend or something brand new.</p>
               </div>
             </div>
+
+
+            <form action="feedback" name="myForm" onsubmit="validate()">
+
             <div class="row justify-content-center">
               <div class="col-md-10 p-5 form-wrap">
                 <form action="#">
@@ -160,6 +184,7 @@
                 </form>
               </div>
             </div>
+          </form>
           </div>
         </div> <!-- .section -->
 
