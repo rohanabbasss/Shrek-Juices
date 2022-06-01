@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+  <url>
+    <loc>http://std1348321.aptech-students.com/</loc>
+    <lastmod>2022-06-01T15:27:02+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>http://std1348321.aptech-students.com/index.html</loc>
+    <lastmod>2022-06-01T15:27:02+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc> http://std1348321.aptech-students.com/menu.html</loc>
+    <lastmod>2022-05-27T15:26:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://std1348321.aptech-students.com/StoreLocation.html</loc>
+    <lastmod>2022-05-27T15:27:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://std1348321.aptech-students.com/franchising.html</loc>
+    <lastmod>2022-05-27T15:26:59+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://std1348321.aptech-students.com/Catering.html</loc>
+    <lastmod>2022-05-27T15:26:54+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://std1348321.aptech-students.com/contact.html</loc>
+    <lastmod>2022-05-27T15:26:54+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://std1348321.aptech-students.com/feedback1.html</loc>
+    <lastmod>2022-05-27T15:26:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://std1348321.aptech-students.com/about.html</loc>
+    <lastmod>2022-05-27T15:26:53+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+
+</urlset>
